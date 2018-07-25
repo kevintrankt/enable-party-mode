@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enable Party Mode</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        .poop {
+            position: relative;
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+
+        .texts {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="poop">
+        <form action="#" class="blah">
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="sample1">
+                <label class="mdl-textfield__label" for="sample1">Enter Text...</label>
+            </div>
+            <span class="texts"></span>
+        </form>
+    </div>
+
+    <script>
+        $('#sample1').keyup(function () {
+            $('.texts').text("<" + $(this).val());
+        });
+    </script>
+
+</body>
+
+</html>
