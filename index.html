@@ -39,6 +39,9 @@
     <script>
         $('#sample1').keyup(function () {
             $('.texts').text("<" + $(this).val());
+            if ($(this).val() == "") {
+                $('.texts').text();
+            }
         });
     </script>
 
